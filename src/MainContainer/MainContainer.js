@@ -16,6 +16,14 @@ export default class MainContainer extends Component {
         })
     }
 
+    //@TODO : DELETE A DOG 
+    // ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> 
+
+
+    //@TODO : UPDATE A DOG
+    //  ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> 
+
+
     render() {
 
         return (

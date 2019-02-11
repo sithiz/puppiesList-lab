@@ -7,7 +7,9 @@ export default class PuppieList extends Component {
             return (
                 <li key={index}>
                     <h1>{item.name}</h1>
+                    {/* @TODO : ADD A DELETE BUTTON */}
                 </li>
+
             )
         })
         return (

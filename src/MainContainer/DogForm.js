@@ -16,9 +16,13 @@ export default class DogForm extends Component {
         // html please dont do your thing
         event.preventDefault()
         this.props.addDog(dog)
+        //@TODO : CLEAN UP INPUTS
+        //==> ==> ==> ==> ==>  ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==>
+
     }
 
     handleOnChange = (event) => {
+
         this.setState({
             [event.currentTarget.name]: event.currentTarget.value
         })
