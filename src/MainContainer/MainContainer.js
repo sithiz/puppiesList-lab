@@ -16,6 +16,15 @@ export default class MainContainer extends Component {
         })
     }
 
+
+
+    deleteDog = (dog) =>{
+        let deletedDog = document.getElementsByClassName('puppy')
+        while (deletedDog.length > 0) deletedDog[0].remove() 
+            
+    }
+
+
     //@TODO : DELETE A DOG 
     // ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> ==> 
 
@@ -31,7 +40,7 @@ export default class MainContainer extends Component {
                 <h1>Helloooo {this.props.username}</h1>
                 <div className="list-wrapper">
                     <ul className="list">
-                        <PuppiesList dogs={this.state.dogs} />
+                        <PuppiesList dogs={this.state.dogs} deleteDog={this.deleteDog} />
                     </ul>
                 </div>
                 <DogForm addDog={this.addDog} />
